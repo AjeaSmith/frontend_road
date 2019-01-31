@@ -137,6 +137,21 @@ header{
     }
 }
 }
-footer{
+footer {
+    position: relative;
+    svg *{
+        text-align: center;
+        fill: white;
+        transform: scale(0.7)    ;
+        -webkit-transform: scale(0.7)    ;
+        -moz-transform: scale(0.7)    ;
+        -ms-transform: scale(0.7)    ;
+        -o-transform: scale(0.7)    ;
+    }
     background: hsl(192, 100%, 9%);
+    .footer__logo{
+        position: absolute;
+        top:55px;
+        left: 30%
+    }
 }
