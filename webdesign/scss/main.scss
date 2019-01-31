@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:400,600,700');
 *{
-    margin-left: 0;
-    margin-right: 0;
+    margin: 0;
 }
 body{
     font-family: 'Open Sans', 'sans-serif';
@@ -138,20 +137,66 @@ header{
 }
 }
 footer {
-    position: relative;
+    height: 100vh;
     svg *{
-        text-align: center;
-        fill: white;
-        transform: scale(0.7)    ;
-        -webkit-transform: scale(0.7)    ;
-        -moz-transform: scale(0.7)    ;
-        -ms-transform: scale(0.7)    ;
-        -o-transform: scale(0.7)    ;
+       text-align: center;
+       fill: white;
+       transform: scale(0.7);
+       -webkit-transform: scale(0.7);
+       -moz-transform: scale(0.7);
+       -ms-transform: scale(0.7);
+       -o-transform: scale(0.7);
     }
     background: hsl(192, 100%, 9%);
-    .footer__logo{
-        position: absolute;
-        top:55px;
-        left: 30%
+
+    .footer__nav{
+        color: #fff;
+        ul{
+            list-style-type: none;
+        }
+        li{
+            text-transform: capitalize;
+            padding: 10px 0;
+        }
+    }
+    .footer__subscribe{
+        h3{
+            color: #fff;
+            font-weight: 400;
+            text-transform: capitalize;
+        }
+        .footer__text {
+            color: #fff;
+        }
+        p{
+            font-size: 0.8em;
+            padding: 0 50px;
+        }
+        input{
+            border: none;
+            width: 280px;
+            padding: 10px;
+        }
+        input, .btn{
+            border-radius: 2px;        ;
+            -webkit-border-radius: 2px        ;
+            -moz-border-radius: 2px        ;
+            -ms-border-radius: 2px        ;
+            -o-border-radius: 2px        ;
+}
+        .btn{
+            font-size: 1em;
+            padding: 10px;
+            border: none;
+            color: #fff;
+            width: 301px;
+            margin-top: 8px;
+            background:hsl(322, 100%, 66%);
+        }
+    }
+    .footer__copyright{
+        font-size: 1em;
+        color: #fff;
+        margin: 0 auto;
     }
 }
