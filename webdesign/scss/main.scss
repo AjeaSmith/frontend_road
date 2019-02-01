@@ -247,4 +247,8 @@ footer {
             margin: 0 auto;
         }
     }
+    .footer .row{
+        display: flex;
+        flex-direction: column;
+    }
 }
