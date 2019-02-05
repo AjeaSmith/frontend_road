@@ -69,6 +69,7 @@ header .head {
 
 .info {
   margin-top: 50px;
+  margin-bottom: 120px;
   background: #fff; }
   .info .info__cards {
     padding: 0 20px;
@@ -98,3 +99,24 @@ header .head {
       color: #808d99;
       padding: 20px 0;
       font-size: 0.8em; }
+
+.download {
+  position: relative;
+  padding: 0 20px; }
+  .download .download__card {
+    width: 340px;
+    border-radius: 10px;
+    box-shadow: 0px -5px 21px -1px rgba(205, 205, 205, 0.75);
+    padding: 12px;
+    top: -55px;
+    right: 5%;
+    background: #fff;
+    position: absolute;
+    text-align: center;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px; }
+
+footer {
+  background: #00252e; }
