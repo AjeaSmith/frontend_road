@@ -1,18 +1,21 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:600");
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0; }
 
 body {
   font-family: 'Open Sans', 'sans-serif';
-  font-size: 18px;
-  padding: 25px 25px;
+  font-size: 18px; }
+
+.bg-wrapper {
   background-color: #ebfbff;
   background-image: url("../images/bg-hero-mobile.svg");
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  background-position: center; }
 
 header .head {
-  padding: 0 5px;
+  padding: 20px 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -35,22 +38,23 @@ header .head {
     -ms-border-radius: 100px;
     -o-border-radius: 100px; }
 
-.hero {
+.hero__container {
+  padding: 0 20px;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center; }
-  .hero .hero__text {
+  .hero__container .hero__text {
     text-align: center; }
-    .hero .hero__text h2 {
+    .hero__container .hero__text h2 {
       font-family: "Poppins", "sans-serif";
       font-weight: 600; }
-    .hero .hero__text p {
+    .hero__container .hero__text p {
       color: #808d99; }
-  .hero .hero__image img {
+  .hero__container .hero__image img {
     width: 100%; }
-  .hero .hero--btn {
+  .hero__container .hero--btn {
     font-weight: 700;
     color: #fff;
     border: none;
@@ -62,3 +66,35 @@ header .head {
     -moz-border-radius: 50px;
     -ms-border-radius: 50px;
     -o-border-radius: 50px; }
+
+.info {
+  margin-top: 50px;
+  background: #fff; }
+  .info .info__cards {
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column; }
+  .info .image {
+    width: 70%; }
+  .info .info__card {
+    height: 420px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: -1px 8px 20px #e1e1e1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-bottom: 35px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px; }
+  .info .info__text, .info .info__image {
+    text-align: center; }
+    .info .info__text h4, .info .info__image h4 {
+      font-weight: 600;
+      font-family: "Poppins", "sans-serif"; }
+    .info .info__text p, .info .info__image p {
+      color: #808d99;
+      padding: 20px 0;
+      font-size: 0.8em; }
