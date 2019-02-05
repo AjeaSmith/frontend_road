@@ -1,3 +1,33 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:600");
+* {
+  margin: 0;
+  padding: 0; }
+
 body {
-  background: #ff52bf; }
+  font-size: 18px;
+  padding: 25px 25px;
+  background-color: #ebfbff;
+  background-image: url("../images/bg-hero-mobile.svg");
+  background-repeat: no-repeat; }
+
+header .head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 100px; }
+  header .head .head__image img {
+    width: 120px; }
+  header .head .head__btn button {
+    font-family: 'Open sans', 'sans-serif';
+    text-transform: capitalize;
+    font-weight: 700;
+    border-radius: 100px;
+    box-shadow: 1px 1px 5px #b7b7b7;
+    border: none;
+    padding: 3px;
+    width: 90px;
+    height: 25px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px; }
