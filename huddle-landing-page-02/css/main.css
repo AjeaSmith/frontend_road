@@ -72,6 +72,7 @@ header .head {
   margin-bottom: 120px;
   background: #fff; }
   .info .info__cards {
+    height: 100%;
     padding: 0 20px;
     display: flex;
     flex-direction: column; }
@@ -109,7 +110,7 @@ header .head {
     box-shadow: 0px -5px 21px -1px rgba(205, 205, 205, 0.75);
     padding: 12px;
     top: -55px;
-    right: 5%;
+    right: 8%;
     background: #fff;
     position: absolute;
     text-align: center;
@@ -117,6 +118,63 @@ header .head {
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px; }
+  .download .download--btn {
+    border: none;
+    background: #ff52bf;
+    color: #fff;
+    margin: 10px 0;
+    padding: 9px;
+    width: 55%;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px; }
 
 footer {
+  color: #fff;
   background: #00252e; }
+  footer .footer__container {
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 0.8em; }
+  footer .footer__huddle {
+    margin-top: 150px; }
+  footer svg * {
+    fill: #fff;
+    transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    -o-transform: scale(0.8); }
+  footer ul {
+    list-style: none; }
+  footer li {
+    padding: 10px 5px; }
+  footer span i {
+    margin-right: 9px;
+    font-size: 1.2em; }
+  footer .footer__nav {
+    margin-top: 50px;
+    margin-bottom: 30px; }
+  footer .footer__icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  footer .footer__icons .icons {
+    display: flex; }
+  footer .footer__icons i {
+    text-align: center;
+    border: 1px solid #fff;
+    padding: 8px;
+    width: 30px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%; }
+  footer p {
+    font-family: 'Open Sans', 'sans-serif'; }

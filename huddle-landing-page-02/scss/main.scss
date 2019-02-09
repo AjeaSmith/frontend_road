@@ -83,6 +83,7 @@ header .head{
     margin-bottom: 120px;
     background: #fff;
     .info__cards{
+        height: 100%;
         padding: $side-padding;
         display: flex;
         flex-direction: column;
@@ -130,7 +131,7 @@ header .head{
         box-shadow: 0px -5px 21px -1px rgba(205, 205, 205, 0.75);
         padding: 12px;
         top: -55px;
-        right: 5%;
+        right: 8%;
         background: #fff;
         position: absolute;
         text-align: center;
@@ -138,8 +139,77 @@ header .head{
         -moz-border-radius:10px;
         -ms-border-radius:10px;
         -o-border-radius:10px;
+    }
+    .download--btn{
+        border: none;
+        background: $primary-pink;
+        color: #fff;
+        margin: 10px 0;
+        padding: 9px;
+        width: 55%;
+        border-radius: 50px;
+        -webkit-border-radius: 50px;
+        -moz-border-radius: 50px;
+        -ms-border-radius: 50px;
+        -o-border-radius: 50px;
 }
 }
 footer{
+    color: #fff;
     background: $primary-dark-cyan;
+    .footer__container{
+        padding: $side-padding; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 0.8em;
+    }
+    .footer__huddle{
+        margin-top: 150px;
+    }
+    svg *{
+        fill: #fff;
+        transform: scale(0.8);
+        -webkit-transform: scale(0.8);
+        -moz-transform: scale(0.8);
+        -ms-transform: scale(0.8);
+        -o-transform: scale(0.8);
+        }
+    ul{
+        list-style: none;
+    }
+    li{
+        padding: 10px 5px;
+    }
+    span i{
+        margin-right: 9px;
+        font-size: 1.2em;
+    }
+    .footer__nav{
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+    .footer__icons{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer__icons .icons{
+        display: flex;
+    }
+    .footer__icons i{
+        text-align: center;
+        border: 1px solid #fff;
+        padding: 8px;
+        width: 30px;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+    }
+    p{
+        font-family: 'Open Sans', 'sans-serif'
+    }
 }
