@@ -159,10 +159,11 @@ header .head{
 }
 }
 footer{
-    height: 80vh;
+    height: 100vh;
     color: #fff;
     background: $primary-dark-cyan;
     .footer__container{
+        height: 100vh;
         padding: $side-padding; 
         display: flex;
         flex-direction: column;
@@ -267,6 +268,7 @@ footer{
     }
     footer{
         .footer__container{
+            height: 45vh;
             flex-direction: row;
             justify-content: space-evenly;
     

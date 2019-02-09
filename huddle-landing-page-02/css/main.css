@@ -136,10 +136,11 @@ header .head {
     -o-border-radius: 50px; }
 
 footer {
-  height: 80vh;
+  height: 100vh;
   color: #fff;
   background: #00252e; }
   footer .footer__container {
+    height: 100vh;
     padding: 0 20px;
     display: flex;
     flex-direction: column;
@@ -218,6 +219,7 @@ footer {
   .download .download__card {
     right: 320px; }
   footer .footer__container {
+    height: 45vh;
     flex-direction: row;
     justify-content: space-evenly; }
     footer .footer__container .footer__nav {
