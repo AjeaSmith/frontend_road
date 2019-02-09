@@ -159,6 +159,7 @@ header .head{
 }
 }
 footer{
+    height: 80vh;
     color: #fff;
     background: $primary-dark-cyan;
     .footer__container{
@@ -166,10 +167,11 @@ footer{
         display: flex;
         flex-direction: column;
         justify-content: center;
+        // align-items: center;
         font-size: 0.8em;
     }
     .footer__huddle{
-        margin-top: 150px;
+        margin-top: 155px;
     }
     svg *{
         fill: #fff;
@@ -189,14 +191,10 @@ footer{
         margin-right: 9px;
         font-size: 1.2em;
     }
-    .footer__nav{
-        margin-top: 50px;
-        margin-bottom: 30px;
-    }
     .footer__icons{
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-end;
         align-items: center;
     }
     .footer__icons .icons{
@@ -214,7 +212,8 @@ footer{
         -o-border-radius: 50%;
     }
     p{
-        font-family: 'Open Sans', 'sans-serif'
+        font-family: 'Open Sans', 'sans-serif';
+        padding: 50px 0;
     }
 }
 @media (min-width: 500px){
@@ -256,16 +255,17 @@ footer{
         width: 420px;
         padding: 20px 0;
     }
+    footer{
+        .footer__nav{
+            align-items: flex-start;
+        }
+    }
 }
 @media (min-width: 1024px){
-    footer{
-        height: 100%;
-    }
     .download .download__card{
         right: 320px;
     }
     footer{
-        height: 45vh;
         .footer__container{
             flex-direction: row;
             justify-content: space-evenly;
@@ -276,9 +276,6 @@ footer{
                 align-items: flex-end;
                 width: 24%;
             }
-        }
-        .footer__container, .footer__nav, .footer__icons{
-            margin-top: 50px;
         }
         .footer__huddle{
             width: 33%;

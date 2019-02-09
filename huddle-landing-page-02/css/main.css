@@ -136,6 +136,7 @@ header .head {
     -o-border-radius: 50px; }
 
 footer {
+  height: 80vh;
   color: #fff;
   background: #00252e; }
   footer .footer__container {
@@ -145,7 +146,7 @@ footer {
     justify-content: center;
     font-size: 0.8em; }
   footer .footer__huddle {
-    margin-top: 150px; }
+    margin-top: 155px; }
   footer svg * {
     fill: #fff;
     transform: scale(0.8);
@@ -160,13 +161,10 @@ footer {
   footer span i {
     margin-right: 9px;
     font-size: 1.2em; }
-  footer .footer__nav {
-    margin-top: 50px;
-    margin-bottom: 30px; }
   footer .footer__icons {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center; }
   footer .footer__icons .icons {
     display: flex; }
@@ -181,7 +179,8 @@ footer {
     -ms-border-radius: 50%;
     -o-border-radius: 50%; }
   footer p {
-    font-family: 'Open Sans', 'sans-serif'; }
+    font-family: 'Open Sans', 'sans-serif';
+    padding: 50px 0; }
 
 @media (min-width: 500px) {
   .download .download__card {
@@ -211,24 +210,20 @@ footer {
   .download .download__card {
     right: 180px;
     width: 420px;
-    padding: 20px 0; } }
+    padding: 20px 0; }
+  footer .footer__nav {
+    align-items: flex-start; } }
 
 @media (min-width: 1024px) {
-  footer {
-    height: 100%; }
   .download .download__card {
     right: 320px; }
-  footer {
-    height: 45vh; }
-    footer .footer__container {
-      flex-direction: row;
-      justify-content: space-evenly; }
-      footer .footer__container .footer__nav {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-end;
-        width: 24%; }
-    footer .footer__container, footer .footer__nav, footer .footer__icons {
-      margin-top: 50px; }
-    footer .footer__huddle {
-      width: 33%; } }
+  footer .footer__container {
+    flex-direction: row;
+    justify-content: space-evenly; }
+    footer .footer__container .footer__nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      width: 24%; }
+  footer .footer__huddle {
+    width: 33%; } }
