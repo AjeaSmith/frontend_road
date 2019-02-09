@@ -57,7 +57,7 @@ header .head {
       color: #808d99; }
   .hero__container .hero__image img {
     width: 100%; }
-  .hero__container .hero--btn {
+  .hero__container .hero__btn .hero--btn {
     font-weight: 700;
     color: #fff;
     border: none;
@@ -82,7 +82,7 @@ header .head {
   .info .image {
     width: 70%; }
   .info .info__card {
-    height: 420px;
+    height: 100%;
     padding: 20px;
     border-radius: 10px;
     box-shadow: -1px 8px 20px #e1e1e1;
@@ -108,12 +108,13 @@ header .head {
   position: relative;
   padding: 0 20px; }
   .download .download__card {
+    font-family: "Poppins", "sans-serif";
     width: 340px;
     border-radius: 10px;
     box-shadow: 0px -5px 21px -1px rgba(205, 205, 205, 0.75);
     padding: 12px;
     top: -55px;
-    right: 5%;
+    margin: 0 auto;
     background: #fff;
     position: absolute;
     text-align: center;
@@ -181,3 +182,53 @@ footer {
     -o-border-radius: 50%; }
   footer p {
     font-family: 'Open Sans', 'sans-serif'; }
+
+@media (min-width: 500px) {
+  .download .download__card {
+    right: 100px; } }
+
+@media (min-width: 768px) {
+  .bg-wrapper {
+    background: url("../images/bg-hero-desktop.svg");
+    background-color: #ebfbff; }
+  .hero__container {
+    flex-direction: row; }
+  .hero__text h2, p, .hero__btn {
+    text-align: left;
+    padding: 0 5px; }
+  p, .hero__btn {
+    font-size: 0.9em; }
+  .hero__image {
+    width: 190%; }
+  .info__cards .info__card {
+    flex-direction: row;
+    align-items: center;
+    padding: 12px 12px; }
+  .info__card .right {
+    order: 1; }
+  .info__text {
+    padding: 0 25px; }
+  .download .download__card {
+    right: 180px;
+    width: 420px;
+    padding: 20px 0; } }
+
+@media (min-width: 1024px) {
+  footer {
+    height: 100%; }
+  .download .download__card {
+    right: 320px; }
+  footer {
+    height: 45vh; }
+    footer .footer__container {
+      flex-direction: row;
+      justify-content: space-evenly; }
+      footer .footer__container .footer__nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        width: 24%; }
+    footer .footer__container, footer .footer__nav, footer .footer__icons {
+      margin-top: 50px; }
+    footer .footer__huddle {
+      width: 33%; } }
