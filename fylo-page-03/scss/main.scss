@@ -1,1 +1,45 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:600');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Raleway:400,700');
+@import "variables";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Open Sans", "sans-serif";
+    display: grid; 
+    grid-template-areas: 
+    'head'
+    'hero'
+    'info'
+    'form'
+    'footer';
+    grid-template-rows: 80px auto auto 200px auto;
+}
+
+.head{
+    grid-area: head;
+    background: red;
+    color: #ffffff;
+}
+.hero{
+    grid-area: hero;
+    background: green;
+    color: #fff;
+}
+.info{
+    grid-area: info;
+    background: pink;
+    color: #fff;
+}
+.form{
+    grid-area: form;
+    background: teal;
+    color: #fff;
+}
+footer{
+    grid-area: footer;
+    background: lightblue;
+    color: #fff;
+}
