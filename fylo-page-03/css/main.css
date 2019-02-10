@@ -114,7 +114,7 @@ body {
     font-size: 0.8em;
     padding: 10px 33px;
     box-shadow: 2px 2px 12px 5px #e0e0eb;
-    width: 350px;
+    width: 290px;
     height: 250px;
     display: flex;
     flex-direction: column;
@@ -212,3 +212,24 @@ footer {
         -o-border-radius: 50px;
         width: 30px;
         margin-left: 5px; }
+
+@media (min-width: 1024px) {
+  body {
+    grid-template-areas: 'head head' 'hero hero' 'info info' 'form form' 'footer footer'; }
+  .head .head__container {
+    padding: 35px 50px; }
+  .hero .hero__container {
+    padding: 100px 50px;
+    flex-direction: row;
+    align-items: flex-start; }
+    .hero .hero__container .hero__text {
+      text-align: left; }
+      .hero .hero__container .hero__text input[type="text"] {
+        width: 40%; }
+      .hero .hero__container .hero__text .btn-form {
+        margin-left: 5px;
+        width: 40%; }
+    .hero .hero__container .hero__image {
+      order: 1; }
+    .hero .hero__container h2 {
+      font-size: 2em; } }
