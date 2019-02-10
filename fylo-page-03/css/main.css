@@ -79,8 +79,70 @@ body {
 
 .info {
   grid-area: info;
-  background: pink;
+  width: 100%;
+  background: url("../images/bg-curve-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
   color: #fff; }
+  .info .info__container {
+    padding: 50px 0;
+    color: #070439;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center; }
+  .info .info__image {
+    width: 85%; }
+  .info .info__text {
+    width: 85%;
+    text-align: center; }
+    .info .info__text h4 {
+      padding: 20px 0;
+      font-family: "Raleway", "sans-serif";
+      color: #070439; }
+    .info .info__text p {
+      color: #585989;
+      text-align: left; }
+    .info .info__text span {
+      color: #3c9f8f;
+      text-decoration: underline; }
+      .info .info__text span img {
+        width: 20px; }
+  .info .testimonial {
+    margin: 0 auto;
+    font-size: 0.8em;
+    padding: 10px 33px;
+    box-shadow: 2px 2px 12px 5px #e0e0eb;
+    width: 350px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    line-height: 165%;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px; }
+    .info .testimonial img {
+      width: 40px; }
+    .info .testimonial .testimonial__quote img {
+      width: 30px; }
+    .info .testimonial .testimonial__image {
+      display: flex;
+      font-size: 0.7em; }
+    .info .testimonial .test__image {
+      margin-right: 5px; }
+      .info .testimonial .test__image img {
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%; }
+    .info .testimonial p b {
+      color: #070439; }
 
 .form {
   grid-area: form;
