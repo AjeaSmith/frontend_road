@@ -13,7 +13,6 @@ body {
   grid-template-rows: auto auto auto auto; }
 
 .head {
-  width: 100%;
   grid-area: head;
   color: #ffffff; }
   .head .head__container {
@@ -33,18 +32,50 @@ body {
     margin: 0 9px; }
 
 .hero {
+  font-size: 90%;
   grid-area: hero;
   color: #070439; }
   .hero .hero__container {
-    padding: 65px 0;
+    padding: 65px 12px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center; }
   .hero .hero__image {
     width: 85%; }
   .hero .hero__text {
+    width: 85%;
     text-align: center; }
+  .hero .hero__form input[type="text"] {
+    border: 1px solid #bfbfbf;
+    border-radius: 3px;
+    width: 85%;
+    padding: 8px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    color: #bfbfbf; }
+  .hero .hero__form input[type="text"]:focus {
+    outline: none; }
+  .hero .hero__form .btn-form {
+    border-radius: 3px;
+    font-family: "Raleway", "sans-serif";
+    font-size: 1em;
+    padding: 8px;
+    width: 85%;
+    text-transform: capitalize;
+    background: #3065f8;
+    border: none;
+    color: #fff;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px; }
+  .hero h2 {
+    padding: 15px 0;
+    font-family: "Open Sans", 'sans-serif';
+    font-weight: 700; }
 
 .info {
   grid-area: info;

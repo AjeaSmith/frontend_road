@@ -21,7 +21,6 @@ body{
     grid-template-rows: auto auto auto auto;
 }
 .head{
-    width: 100%;
     grid-area: head;
     color: #ffffff;
     .head__container{
@@ -45,21 +44,60 @@ body{
     }
 }
 .hero{
+    font-size: 90%;
     grid-area: hero;
     color: $darkblue;
     .hero__container{
-        padding: 65px 0;
+        padding: 65px 12px;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-evenly;
         align-items: center;
     }
     .hero__image{
         width: 85%;
     }
     .hero__text{
+        width: 85%;
         text-align: center;
     }
+    .hero__form{
+        input[type="text"]{
+            border: 1px solid $lightgray;
+            border-radius:3px;
+            width: 85%;
+            padding: 8px;
+            -webkit-border-radius:3px;
+            -moz-border-radius:3px;
+            -ms-border-radius:3px;
+            -o-border-radius:3px;
+            color: $lightgray;
+        }
+        input[type="text"]:focus{
+            outline: none;
+        }
+        .btn-form{
+            border-radius:3px;
+            font-family: "Raleway", "sans-serif";
+            font-size: 1em;
+            padding: 8px;
+            width: 85%;
+            text-transform: capitalize;
+            background: $blue;
+            border: none;
+            color: #fff;
+            -webkit-border-radius:3px;
+            -moz-border-radius:3px;
+            -ms-border-radius:3px;
+            -o-border-radius:3px;
+        }
+    }
+    h2{
+        padding: 15px 0;
+        font-family: "Open Sans", 'sans-serif';
+        font-weight: 700;
+    }
+
 }
 .info{
     grid-area: info;
