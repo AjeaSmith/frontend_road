@@ -146,10 +146,69 @@ body {
 
 .form {
   grid-area: form;
-  background: teal;
+  background: #585989;
   color: #fff; }
+  .form .form__container {
+    text-align: center;
+    padding: 30px 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center; }
+  .form .form__text p {
+    margin: 20px 0; }
+  .form .form__text h3 {
+    font-weight: 400;
+    font-family: "Raleway", "sans-serif";
+    padding: 15px 0; }
+  .form .form--bottom, .form .form-btn-bottom {
+    margin-bottom: 10px;
+    width: 70%;
+    padding: 9px;
+    border: none;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px; }
+  .form .form-btn-bottom {
+    color: #fff;
+    padding: 9px;
+    background: #3065f8;
+    text-transform: capitalize; }
 
 footer {
+  height: 90vh;
   grid-area: footer;
-  background: lightblue;
+  background: #070439;
   color: #fff; }
+  footer svg * {
+    fill: #fff; }
+  footer .footer__container {
+    height: 100%;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; }
+    footer .footer__container ul {
+      list-style: none; }
+    footer .footer__container .icons li span i {
+      margin-right: 5px; }
+    footer .footer__container li {
+      margin: 12px 0; }
+    footer .footer__container .footer__nav, footer .footer__container .footer__nav2 {
+      text-transform: capitalize; }
+    footer .footer__container .footer__icons {
+      text-align: center; }
+      footer .footer__container .footer__icons i {
+        cursor: pointer;
+        text-align: center;
+        border: 1px solid #fff;
+        padding: 5px;
+        border-radius: 50px;
+        -webkit-border-radius: 50px;
+        -moz-border-radius: 50px;
+        -ms-border-radius: 50px;
+        -o-border-radius: 50px;
+        width: 30px;
+        margin-left: 5px; }
