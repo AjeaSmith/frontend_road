@@ -247,7 +247,13 @@ footer{
         li{
             margin: 12px 0;
         }
-        .footer__nav, .footer__nav2{
+        .footer__nav{
+            width: 33%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+        .footer__nav1, .footer__nav2{
             text-transform: capitalize;
         }
         .footer__icons{
@@ -306,6 +312,21 @@ footer{
         }
         img{
             width: 65%;
+        }
+    }
+    footer{
+        height: 55vh;
+        .footer__container{
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-evenly;
+
+            .footer__nav{
+                width: 33%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+            }
         }
     }
 }
@@ -406,6 +427,11 @@ footer{
             justify-content: space-between;
 
             .footer__nav{
+                justify-content: space-around;
+            }
+            .footer__nav2{
+                display: flex;
+                flex-direction: column;
                 align-items: flex-end;
             }
         }
