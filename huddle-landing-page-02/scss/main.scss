@@ -123,104 +123,104 @@ header .head{
     }
 
 }
-.download{
-    position: relative;
-    padding: $side-padding;
-
-    .download__card{
-        font-family: $poppins;
-        width: 340px;
-        border-radius:10px;
-        box-shadow: 0px -5px 21px -1px rgba(205, 205, 205, 0.75);
-        padding: 12px;
-        top: -55px;
-        // right: 30px;
-        margin: 0 auto;
-        background: #fff;
-        position: absolute;
-        text-align: center;
-        -webkit-border-radius:10px;
-        -moz-border-radius:10px;
-        -ms-border-radius:10px;
-        -o-border-radius:10px;
-    }
-    .download--btn{
-        border: none;
-        background: $primary-pink;
-        color: #fff;
-        margin: 10px 0;
-        padding: 9px;
-        width: 55%;
-        border-radius: 50px;
-        -webkit-border-radius: 50px;
-        -moz-border-radius: 50px;
-        -ms-border-radius: 50px;
-        -o-border-radius: 50px;
-}
-}
 footer{
     height: 100vh;
     color: #fff;
     background: $primary-dark-cyan;
     .footer__container{
-        height: 100vh;
+        position: relative;
+        height: 100%;
         padding: $side-padding; 
         display: flex;
         flex-direction: column;
         justify-content: center;
-        // align-items: center;
         font-size: 0.8em;
-    }
-    .footer__huddle{
-        margin-top: 155px;
-    }
-    svg *{
-        fill: #fff;
-        transform: scale(0.8);
-        -webkit-transform: scale(0.8);
-        -moz-transform: scale(0.8);
-        -ms-transform: scale(0.8);
-        -o-transform: scale(0.8);
+        .download{
+            position: absolute;
+            top: -50px;
+            right: 16px;
+        
+            .download__card{
+                color: $primary-dark-cyan;
+                font-family: $poppins;
+                width: 340px;
+                border-radius:10px;
+                box-shadow: 0px -5px 21px -1px rgba(205, 205, 205, 0.75);
+                padding: 12px;
+                background: #fff;
+                text-align: center;
+                -webkit-border-radius:10px;
+                -moz-border-radius:10px;
+                -ms-border-radius:10px;
+                -o-border-radius:10px;
+            }
+            .download--btn{
+                border: none;
+                background: $primary-pink;
+                color: #fff;
+                margin: 10px 0;
+                padding: 9px;
+                width: 55%;
+                border-radius: 50px;
+                -webkit-border-radius: 50px;
+                -moz-border-radius: 50px;
+                -ms-border-radius: 50px;
+                -o-border-radius: 50px;
+            }
         }
-    ul{
-        list-style: none;
-    }
-    li{
-        padding: 10px 5px;
-    }
-    span i{
-        margin-right: 9px;
-        font-size: 1.2em;
-    }
-    .footer__icons{
-        padding-top: 120px;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        align-items: center;
-    }
-    .footer__icons .icons{
-        display: flex;
-    }
-    .footer__icons i{
-        text-align: center;
-        border: 1px solid #fff;
-        padding: 8px;
-        width: 30px;
-        border-radius: 50%;
-        -webkit-border-radius: 50%;
-        -moz-border-radius: 50%;
-        -ms-border-radius: 50%;
-        -o-border-radius: 50%;
-    }
-    p{
-        font-family: 'Open Sans', 'sans-serif';
-        padding: 50px 0;
+        .footer__huddle{
+            margin-top: 100px;
+        }
+        svg *{
+            fill: #fff;
+            transform: scale(0.8);
+            -webkit-transform: scale(0.8);
+            -moz-transform: scale(0.8);
+            -ms-transform: scale(0.8);
+            -o-transform: scale(0.8);
+            }
+        ul{
+            list-style: none;
+        }
+        li{
+            padding: 10px 5px;
+        }
+        span i{
+            margin-right: 9px;
+            font-size: 1.2em;
+        }
+        .footer__icons{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+        }
+        .footer__nav{
+            margin-bottom: 40px;
+        }
+        .footer__icons .icons{
+            display: flex;
+        }
+        .footer__icons i{
+            text-align: center;
+            border: 1px solid #fff;
+            padding: 8px;
+            width: 30px;
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+        }
+        p{
+            font-family: 'Open Sans', 'sans-serif';
+            text-align: center;
+        }
     }
 }
 @media (min-width: 500px){
-    .download .download__card{
-        right: 100px;
+    footer .footer__container .download{
+        right: 170px;
     }
 }
 @media (min-width: 768px){
@@ -252,36 +252,43 @@ footer{
     .info__text{
         padding: 0 25px;
     }
-    .download .download__card{
-        right: 180px;
-        width: 420px;
-        padding: 20px 0;
-    }
     footer{
         .footer__nav{
             align-items: flex-start;
         }
-    }
-}
-@media (min-width: 1024px){
-    .download .download__card{
-        right: 320px;
-    }
-    footer{
         .footer__container{
-            height: 45vh;
-            flex-direction: row;
-            justify-content: space-evenly;
-    
-            .footer__nav{
-                display: flex;
-                justify-content: space-between;
-                align-items: flex-end;
-                width: 24%;
+            .download{
+                top: -50px;
+                right: 200px;
+            }
+            .footer__huddle{
+                margin-top: 0;
             }
         }
-        .footer__huddle{
-            width: 33%;
+    }
+
+}
+@media (min-width: 1024px){
+    footer{
+        height: 70vh;
+        .footer__container{
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            .download{
+                right: 333px;  
+            }
+            .footer__nav{
+                margin-bottom: 0;
+                width: 33%;
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+            }
+            .footer__huddle{
+                margin-top: 0;
+                width: 33%;
+            }
         }
     }
 }

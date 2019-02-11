@@ -104,89 +104,89 @@ header .head {
       padding: 20px 0;
       font-size: 0.8em; }
 
-.download {
-  position: relative;
-  padding: 0 20px; }
-  .download .download__card {
-    font-family: "Poppins", "sans-serif";
-    width: 340px;
-    border-radius: 10px;
-    box-shadow: 0px -5px 21px -1px rgba(205, 205, 205, 0.75);
-    padding: 12px;
-    top: -55px;
-    margin: 0 auto;
-    background: #fff;
-    position: absolute;
-    text-align: center;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px; }
-  .download .download--btn {
-    border: none;
-    background: #ff52bf;
-    color: #fff;
-    margin: 10px 0;
-    padding: 9px;
-    width: 55%;
-    border-radius: 50px;
-    -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    -ms-border-radius: 50px;
-    -o-border-radius: 50px; }
-
 footer {
   height: 100vh;
   color: #fff;
   background: #00252e; }
   footer .footer__container {
-    height: 100vh;
+    position: relative;
+    height: 100%;
     padding: 0 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     font-size: 0.8em; }
-  footer .footer__huddle {
-    margin-top: 155px; }
-  footer svg * {
-    fill: #fff;
-    transform: scale(0.8);
-    -webkit-transform: scale(0.8);
-    -moz-transform: scale(0.8);
-    -ms-transform: scale(0.8);
-    -o-transform: scale(0.8); }
-  footer ul {
-    list-style: none; }
-  footer li {
-    padding: 10px 5px; }
-  footer span i {
-    margin-right: 9px;
-    font-size: 1.2em; }
-  footer .footer__icons {
-    padding-top: 120px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center; }
-  footer .footer__icons .icons {
-    display: flex; }
-  footer .footer__icons i {
-    text-align: center;
-    border: 1px solid #fff;
-    padding: 8px;
-    width: 30px;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%; }
-  footer p {
-    font-family: 'Open Sans', 'sans-serif';
-    padding: 50px 0; }
+    footer .footer__container .download {
+      position: absolute;
+      top: -50px;
+      right: 16px; }
+      footer .footer__container .download .download__card {
+        color: #00252e;
+        font-family: "Poppins", "sans-serif";
+        width: 340px;
+        border-radius: 10px;
+        box-shadow: 0px -5px 21px -1px rgba(205, 205, 205, 0.75);
+        padding: 12px;
+        background: #fff;
+        text-align: center;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px; }
+      footer .footer__container .download .download--btn {
+        border: none;
+        background: #ff52bf;
+        color: #fff;
+        margin: 10px 0;
+        padding: 9px;
+        width: 55%;
+        border-radius: 50px;
+        -webkit-border-radius: 50px;
+        -moz-border-radius: 50px;
+        -ms-border-radius: 50px;
+        -o-border-radius: 50px; }
+    footer .footer__container .footer__huddle {
+      margin-top: 100px; }
+    footer .footer__container svg * {
+      fill: #fff;
+      transform: scale(0.8);
+      -webkit-transform: scale(0.8);
+      -moz-transform: scale(0.8);
+      -ms-transform: scale(0.8);
+      -o-transform: scale(0.8); }
+    footer .footer__container ul {
+      list-style: none; }
+    footer .footer__container li {
+      padding: 10px 5px; }
+    footer .footer__container span i {
+      margin-right: 9px;
+      font-size: 1.2em; }
+    footer .footer__container .footer__icons {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center; }
+    footer .footer__container .footer__nav {
+      margin-bottom: 40px; }
+    footer .footer__container .footer__icons .icons {
+      display: flex; }
+    footer .footer__container .footer__icons i {
+      text-align: center;
+      border: 1px solid #fff;
+      padding: 8px;
+      width: 30px;
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%; }
+    footer .footer__container p {
+      font-family: 'Open Sans', 'sans-serif';
+      text-align: center; }
 
 @media (min-width: 500px) {
-  .download .download__card {
-    right: 100px; } }
+  footer .footer__container .download {
+    right: 170px; } }
 
 @media (min-width: 768px) {
   .bg-wrapper {
@@ -209,24 +209,29 @@ footer {
     order: 1; }
   .info__text {
     padding: 0 25px; }
-  .download .download__card {
-    right: 180px;
-    width: 420px;
-    padding: 20px 0; }
   footer .footer__nav {
-    align-items: flex-start; } }
+    align-items: flex-start; }
+  footer .footer__container .download {
+    top: -50px;
+    right: 200px; }
+  footer .footer__container .footer__huddle {
+    margin-top: 0; } }
 
 @media (min-width: 1024px) {
-  .download .download__card {
-    right: 320px; }
-  footer .footer__container {
-    height: 45vh;
-    flex-direction: row;
-    justify-content: space-evenly; }
-    footer .footer__container .footer__nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-end;
-      width: 24%; }
-  footer .footer__huddle {
-    width: 33%; } }
+  footer {
+    height: 70vh; }
+    footer .footer__container {
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center; }
+      footer .footer__container .download {
+        right: 333px; }
+      footer .footer__container .footer__nav {
+        margin-bottom: 0;
+        width: 33%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly; }
+      footer .footer__container .footer__huddle {
+        margin-top: 0;
+        width: 33%; } }
