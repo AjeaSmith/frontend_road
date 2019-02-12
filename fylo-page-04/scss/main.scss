@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Raleway:700');
+@import 'variables';
 *{
     margin: 0;
     padding: 0;
@@ -8,6 +9,48 @@ h1, h2, h3, h4, h5, h6{
     font-family: "Raleway", sans-serif;
     font-weight: 700;
 }
+ul{
+    list-style: none;
+}
+#wrapper{
+    height: 550px;
+    position: relative;
+    background-image: linear-gradient(170deg, $darkblue, $darkblue, $lightblue);
+    clip-path: polygon(100% 0, 100% 87%, 0 73%, 0 0);
+}
 body{
     font-family: "Open Sans", sans-serif;
+    display: grid; 
+    grid-template-areas: 
+    'head'
+    'hero'
+    'products'
+    'footer';
+    grid-template-rows: auto auto auto auto;
+    grid-template-columns: auto;
+}
+header{
+    grid-area: head;
+    .head__inner{
+        grid-gap: 5px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+.hero{
+    grid-area: hero;
+    // @media (min-width: 768px){
+    //     .hero__inner{
+    //          display: grid;
+    //         grid-template-columns: 1fr 1fr;
+    //     }
+    // }
+}
+.products{
+    grid-area: products;
+    background: teal;
+}
+footer{
+    grid-area: footer;
+    background: orange;
 }

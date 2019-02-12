@@ -8,5 +8,36 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", sans-serif;
   font-weight: 700; }
 
+ul {
+  list-style: none; }
+
+#wrapper {
+  height: 550px;
+  position: relative;
+  background-image: linear-gradient(170deg, #2b258d, #2b258d, #bbb8fa);
+  clip-path: polygon(100% 0, 100% 87%, 0 73%, 0 0); }
+
 body {
-  font-family: "Open Sans", sans-serif; }
+  font-family: "Open Sans", sans-serif;
+  display: grid;
+  grid-template-areas: 'head' 'hero' 'products' 'footer';
+  grid-template-rows: auto auto auto auto;
+  grid-template-columns: auto; }
+
+header {
+  grid-area: head; }
+  header .head__inner {
+    grid-gap: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr; }
+
+.hero {
+  grid-area: hero; }
+
+.products {
+  grid-area: products;
+  background: teal; }
+
+footer {
+  grid-area: footer;
+  background: orange; }
