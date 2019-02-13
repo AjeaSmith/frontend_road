@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Raleway:700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Raleway:700,400');
 @import 'variables';
 *{
     margin: 0;
@@ -7,16 +7,15 @@
 }
 h1, h2, h3, h4, h5, h6{
     font-family: "Raleway", sans-serif;
-    font-weight: 700;
 }
 ul{
     list-style: none;
 }
 #wrapper{
-    height: 550px;
+    height: 700px;
     position: relative;
     background-image: linear-gradient(170deg, $darkblue, $darkblue, $lightblue);
-    clip-path: polygon(100% 0, 100% 87%, 0 73%, 0 0);
+    clip-path: polygon(1% 0, 100% 0, 100% 90%, 0 85%);
 }
 body{
     font-family: "Open Sans", sans-serif;
@@ -29,16 +28,86 @@ body{
     grid-template-rows: auto auto auto 500px;
     grid-template-columns: auto;
 }
+.products__inner .products__image, .hero__inner .hero__image{
+    width: 100%;
+    img{
+        width: 100%;
+    }
+}
 header{
+    margin-bottom: 80px;
     grid-area: head;
     .head__inner{
+        align-items: center;
+        padding: 12px 12px;
         grid-gap: 5px;
         display: grid;
         grid-template-columns: 1fr 1fr;
+
+        .links{
+            font-family: "Raleway", sans-serif;
+            grid-column: 3/4;
+        }
+        ul{
+            display: flex;
+        }
+        li{
+            font-size: 0.9em;
+            text-align: center;
+            color: #fff;
+            margin-left: 10px;
+        }
+        .signup--btn{
+            width: 80px;
+            text-transform: capitalize;
+            border-radius:2px;
+            color: #fff;
+            border: none;
+            padding: 5px 5px;
+            background: $green;
+            outline: none;
+            -webkit-border-radius:2px;
+            -moz-border-radius:2px;
+            -ms-border-radius:2px;
+            -o-border-radius:2px;
+            &:focus{
+                outline: none;
+            }
+        }
     }
 }
 .hero{
     grid-area: hero;
+    color: #fff;
+    .hero__inner{
+        width: 100%;
+        text-align: center;
+
+        img{
+            width: 60%;
+        }
+        .hero__text{
+            padding: 10px 60px;
+        }
+        h3{
+            padding: 10px 0;
+        }
+        .hero--btn{
+            margin: 15px 0;
+            text-align: center;
+            width: 160px;
+            background: $green;
+            color: #fff;
+            font-family: "Raleway", sans-serif;
+            border: none;
+            padding: 8px 10px;
+            border-radius: 2px;
+            -webkit-border-radius: 2px;
+            -moz-border-radius: 2px;
+            -ms-border-radius: 2px;
+            -o-border-radius: 2px;
+        }
+    }
     // @media (min-width: 768px){
     //     .hero__inner{
     //          display: grid;
@@ -48,7 +117,73 @@ header{
 }
 .products{
     grid-area: products;
-    background: teal;
+    .products__inner{
+        h2{
+            color: $DDblue;
+            line-height: 120%;
+            padding: 15px 35px;
+            text-align: center;
+        }
+        .products__image{
+            margin: 35px 0;
+            text-align: center;
+            img{
+                width: 60%;
+            }
+        }
+        .products__text{
+            padding: 10px 15px;
+            text-align: left;
+            h4{
+                color: $DDblue;
+                padding: 15px 0;
+            }
+        }
+    }
+    .products__form{
+        margin: 30px 0;
+        text-align: center;
+        h2{
+            color: $DDblue;
+            padding: 20px 0;
+        }
+        p{
+            color: $darkblue;
+            padding: 20px 15px;
+        }
+        .form--wrapper{
+            margin-top: 30px;
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+            align-items: center;
+        }
+        .form--input{
+            box-shadow: 1px 0px 24px 1px rgba(0, 0, 0, 0.1);
+            width: 330px;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            padding: 15px 15px;
+            margin-bottom: 10px;
+            border-radius: 2px;
+            -webkit-border-radius: 2px;
+            -moz-border-radius: 2px;
+            -ms-border-radius: 2px;
+            -o-border-radius: 2px;
+}
+        .form--btn{
+            color: #fff;
+            background: $green;
+            padding: 15px 15px;
+            width: 330px;
+            border: none;
+            border-radius:2px;
+            -webkit-border-radius:2px;
+            -moz-border-radius:2px;
+            -ms-border-radius:2px;
+            -o-border-radius:2px;
+            -webkit-border-radius:  2px       ;
+        }
+    }
 }
 footer{
     color: #fff;

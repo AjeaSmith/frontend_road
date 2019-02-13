@@ -1,21 +1,20 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Raleway:700");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Raleway:700,400");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Raleway", sans-serif;
-  font-weight: 700; }
+  font-family: "Raleway", sans-serif; }
 
 ul {
   list-style: none; }
 
 #wrapper {
-  height: 550px;
+  height: 700px;
   position: relative;
   background-image: linear-gradient(170deg, #2b258d, #2b258d, #bbb8fa);
-  clip-path: polygon(100% 0, 100% 87%, 0 73%, 0 0); }
+  clip-path: polygon(1% 0, 100% 0, 100% 90%, 0 85%); }
 
 body {
   font-family: "Open Sans", sans-serif;
@@ -24,19 +23,129 @@ body {
   grid-template-rows: auto auto auto 500px;
   grid-template-columns: auto; }
 
+.products__inner .products__image, .hero__inner .hero__image {
+  width: 100%; }
+  .products__inner .products__image img, .hero__inner .hero__image img {
+    width: 100%; }
+
 header {
+  margin-bottom: 80px;
   grid-area: head; }
   header .head__inner {
+    align-items: center;
+    padding: 12px 12px;
     grid-gap: 5px;
     display: grid;
     grid-template-columns: 1fr 1fr; }
+    header .head__inner .links {
+      font-family: "Raleway", sans-serif;
+      grid-column: 3/4; }
+    header .head__inner ul {
+      display: flex; }
+    header .head__inner li {
+      font-size: 0.9em;
+      text-align: center;
+      color: #fff;
+      margin-left: 10px; }
+    header .head__inner .signup--btn {
+      width: 80px;
+      text-transform: capitalize;
+      border-radius: 2px;
+      color: #fff;
+      border: none;
+      padding: 5px 5px;
+      background: #05d69b;
+      outline: none;
+      -webkit-border-radius: 2px;
+      -moz-border-radius: 2px;
+      -ms-border-radius: 2px;
+      -o-border-radius: 2px; }
+      header .head__inner .signup--btn:focus {
+        outline: none; }
 
 .hero {
-  grid-area: hero; }
+  grid-area: hero;
+  color: #fff; }
+  .hero .hero__inner {
+    width: 100%;
+    text-align: center; }
+    .hero .hero__inner img {
+      width: 60%; }
+    .hero .hero__inner .hero__text {
+      padding: 10px 60px; }
+    .hero .hero__inner h3 {
+      padding: 10px 0; }
+    .hero .hero__inner .hero--btn {
+      margin: 15px 0;
+      text-align: center;
+      width: 160px;
+      background: #05d69b;
+      color: #fff;
+      font-family: "Raleway", sans-serif;
+      border: none;
+      padding: 8px 10px;
+      border-radius: 2px;
+      -webkit-border-radius: 2px;
+      -moz-border-radius: 2px;
+      -ms-border-radius: 2px;
+      -o-border-radius: 2px; }
 
 .products {
-  grid-area: products;
-  background: teal; }
+  grid-area: products; }
+  .products .products__inner h2 {
+    color: #070439;
+    line-height: 120%;
+    padding: 15px 35px;
+    text-align: center; }
+  .products .products__inner .products__image {
+    margin: 35px 0;
+    text-align: center; }
+    .products .products__inner .products__image img {
+      width: 60%; }
+  .products .products__inner .products__text {
+    padding: 10px 15px;
+    text-align: left; }
+    .products .products__inner .products__text h4 {
+      color: #070439;
+      padding: 15px 0; }
+  .products .products__form {
+    margin: 30px 0;
+    text-align: center; }
+    .products .products__form h2 {
+      color: #070439;
+      padding: 20px 0; }
+    .products .products__form p {
+      color: #2b258d;
+      padding: 20px 15px; }
+    .products .products__form .form--wrapper {
+      margin-top: 30px;
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      align-items: center; }
+    .products .products__form .form--input {
+      box-shadow: 1px 0px 24px 1px rgba(0, 0, 0, 0.1);
+      width: 330px;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      padding: 15px 15px;
+      margin-bottom: 10px;
+      border-radius: 2px;
+      -webkit-border-radius: 2px;
+      -moz-border-radius: 2px;
+      -ms-border-radius: 2px;
+      -o-border-radius: 2px; }
+    .products .products__form .form--btn {
+      color: #fff;
+      background: #05d69b;
+      padding: 15px 15px;
+      width: 330px;
+      border: none;
+      border-radius: 2px;
+      -webkit-border-radius: 2px;
+      -moz-border-radius: 2px;
+      -ms-border-radius: 2px;
+      -o-border-radius: 2px;
+      -webkit-border-radius: 2px; }
 
 footer {
   color: #fff;
