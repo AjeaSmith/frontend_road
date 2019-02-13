@@ -21,7 +21,7 @@ body {
   font-family: "Open Sans", sans-serif;
   display: grid;
   grid-template-areas: 'head' 'hero' 'products' 'footer';
-  grid-template-rows: auto auto auto auto;
+  grid-template-rows: auto auto auto 500px;
   grid-template-columns: auto; }
 
 header {
@@ -39,5 +39,7 @@ header {
   background: teal; }
 
 footer {
-  grid-area: footer;
-  background: orange; }
+  color: #fff;
+  background-image: linear-gradient(to bottom, #070439, #070439);
+  clip-path: polygon(0 10%, 100% 29%, 100% 100%, 0% 100%);
+  grid-area: footer; }
