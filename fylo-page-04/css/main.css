@@ -20,7 +20,7 @@ body {
   font-family: "Open Sans", sans-serif;
   display: grid;
   grid-template-areas: 'head' 'hero' 'products' 'footer';
-  grid-template-rows: auto auto auto 500px;
+  grid-template-rows: auto auto auto 1000px;
   grid-template-columns: auto; }
 
 .products__inner .products__image, .hero__inner .hero__image {
@@ -147,8 +147,64 @@ header {
       -o-border-radius: 2px;
       -webkit-border-radius: 2px; }
 
-footer {
-  color: #fff;
+#footer {
   background-image: linear-gradient(to bottom, #070439, #070439);
-  clip-path: polygon(0 10%, 100% 29%, 100% 100%, 0% 100%);
+  -webkit-clip-path: polygon(0 10%, 100% 14%, 100% 100%, 0 100%);
+  clip-path: polygon(0 10%, 100% 14%, 100% 100%, 0 100%);
   grid-area: footer; }
+  #footer footer {
+    position: relative;
+    height: 100vh; }
+    #footer footer .footer__inner {
+      position: absolute;
+      color: #fff;
+      top: 240px;
+      height: 100vh;
+      padding: 0 30px;
+      display: flex;
+      justify-content: space-evenly;
+      flex-direction: column; }
+      #footer footer .footer__inner .footer__fylo {
+        margin-bottom: 40px; }
+        #footer footer .footer__inner .footer__fylo ul li {
+          margin: 25px 0; }
+          #footer footer .footer__inner .footer__fylo ul li span i {
+            color: #bbb8fa;
+            margin-right: 5px;
+            font-size: 1.2em; }
+      #footer footer .footer__inner .footer__form h3 {
+        text-align: center; }
+      #footer footer .footer__inner .footer__form .footer--form {
+        margin: 40px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+        width: 100%; }
+        #footer footer .footer__inner .footer__form .footer--form input {
+          border-radius: 2px;
+          width: 320px;
+          border: none;
+          padding: 10px;
+          -webkit-border-radius: 2px;
+          -moz-border-radius: 2px;
+          -ms-border-radius: 2px;
+          -o-border-radius: 2px; }
+        #footer footer .footer__inner .footer__form .footer--form .footer--form--btn {
+          background: #05d69b;
+          color: #fff;
+          margin: 10px 0;
+          border: none;
+          width: 150px;
+          padding: 10px;
+          border-radius: 2px;
+          -webkit-border-radius: 2px;
+          -moz-border-radius: 2px;
+          -ms-border-radius: 2px;
+          -o-border-radius: 2px; }
+      #footer footer .footer__inner .footer__nav {
+        order: 3; }
+        #footer footer .footer__inner .footer__nav .bold {
+          font-weight: bold; }
+        #footer footer .footer__inner .footer__nav ul {
+          margin-bottom: 20px; }
