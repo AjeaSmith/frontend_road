@@ -10,15 +10,6 @@ h1, h2, h3, h4, h5, h6 {
 ul {
   list-style: none; }
 
-#wrapper {
-  height: 730px;
-  position: relative;
-  background-image: linear-gradient(170deg, #2b258d, #2b258d, #bbb8fa);
-  clip-path: polygon(0% 0, 100% 0, 100% 90%, 0 85%); }
-  @media (min-width: 500px) {
-    #wrapper #wrapper {
-      height: 130px; } }
-
 body {
   font-family: "Open Sans", sans-serif;
   display: grid;
@@ -32,9 +23,14 @@ body {
     width: 100%; }
 
 header {
+  height: 700px;
+  position: relative;
+  background-image: linear-gradient(to bottom, #2b258d, #2b258d, #bbb8fa);
+  clip-path: polygon(0% 0, 100% 0, 100% calc(100% - 5vw), 0 calc(100% - 10vw));
   margin-bottom: 80px;
   grid-area: head; }
   header .head__inner {
+    margin-bottom: 90px;
     align-items: center;
     padding: 20px 20px;
     grid-gap: 5px;
@@ -44,6 +40,7 @@ header {
       font-family: "Raleway", sans-serif;
       grid-column: 3/4; }
     header .head__inner ul {
+      padding: 0 30px;
       display: flex; }
     header .head__inner li {
       font-size: 0.9em;
@@ -65,6 +62,8 @@ header {
       -o-border-radius: 2px; }
       header .head__inner .signup--btn:focus {
         outline: none; }
+    header .head__inner img {
+      padding: 0 30px; }
   @media (min-width: 500px) {
     header header {
       margin-bottom: 60px; } }
@@ -78,7 +77,7 @@ header {
     .hero .hero__inner img {
       width: 50%; }
     .hero .hero__inner .hero__text {
-      padding: 10px 60px; }
+      padding: 0 36px; }
     .hero .hero__inner h3 {
       padding: 10px 0; }
     .hero .hero__inner .hero--btn {
@@ -109,32 +108,40 @@ header {
       .hero .hero__inner img {
         width: 65%; }
       .hero .hero__inner .hero__text {
-        padding: 0 15px;
         text-align: left;
         order: -1; }
         .hero .hero__inner .hero__text h3 {
           line-height: 130%;
           font-size: 1.4em;
           padding: 0; } }
+  @media (min-width: 1024px) {
+    .hero header .head__inner {
+      margin-bottom: 100px; }
+    .hero .hero__inner img {
+      width: 300px; }
+    .hero .hero__inner .hero__text h3 {
+      font-size: 1.6em; } }
 
 .products {
   grid-area: products; }
-  .products .products__inner h2 {
+  .products h2 {
+    font-size: 2em;
     color: #070439;
     line-height: 120%;
-    padding: 15px 35px;
     text-align: center; }
-  .products .products__inner .products__image {
-    margin: 35px 0;
-    text-align: center; }
-    .products .products__inner .products__image img {
-      width: 60%; }
-  .products .products__inner .products__text {
-    padding: 10px 15px;
-    text-align: left; }
-    .products .products__inner .products__text h4 {
-      color: #070439;
-      padding: 15px 0; }
+  .products .products__inner {
+    margin: 30px 0; }
+    .products .products__inner .products__image {
+      margin: 35px 0;
+      text-align: center; }
+      .products .products__inner .products__image img {
+        width: 60%; }
+    .products .products__inner .products__text {
+      padding: 10px 15px;
+      text-align: left; }
+      .products .products__inner .products__text h4 {
+        color: #070439;
+        padding: 15px 0; }
   .products .products__form {
     margin: 30px 0;
     text-align: center; }
@@ -176,6 +183,28 @@ header {
   @media (min-width: 500px) {
     .products .products__inner .products__image img {
       width: 40%; } }
+  @media (min-width: 1024px) {
+    .products .products h2 {
+      margin: 0;
+      padding: 0; }
+    .products .products__inner {
+      padding: 0 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 100px 0; }
+      .products .products__inner .products__image {
+        margin: 0; }
+      .products .products__inner .products__image img {
+        width: 300px; }
+      .products .products__inner .products__text {
+        width: 160%;
+        grid-row-gap: 30px;
+        display: grid;
+        grid-column-gap: 30px;
+        grid-template-columns: 1fr 1fr; }
+        .products .products__inner .products__text h4 {
+          font-size: 1.1em; } }
 
 #footer {
   background-image: linear-gradient(to bottom, #070439, #070439);

@@ -11,18 +11,6 @@ h1, h2, h3, h4, h5, h6{
 ul{
     list-style: none;
 }
-#wrapper{
-    height: 730px;
-    position: relative;
-    background-image: linear-gradient(170deg, $darkblue, $darkblue, $lightblue);
-    clip-path: polygon(0% 0, 100% 0, 100% 90%, 0 85%);
-
-    @media (min-width: 500px){
-        #wrapper{
-            height: 130px;
-        }
-    }
-}
 body{
     font-family: "Open Sans", sans-serif;
     display: grid; 
@@ -41,9 +29,14 @@ body{
     }
 }
 header{
+    height: 700px;
+    position: relative;
+    background-image: linear-gradient(to bottom, $darkblue, $darkblue, $lightblue);
+    clip-path: polygon(0% 0, 100% 0, 100% calc(100% - 5vw), 0 calc(100% - 10vw));
     margin-bottom: 80px;
     grid-area: head;
     .head__inner{
+        margin-bottom: 90px;
         align-items: center;
         padding: 20px 20px;
         grid-gap: 5px;
@@ -55,6 +48,7 @@ header{
             grid-column: 3/4;
         }
         ul{
+            padding: 0 30px;
             display: flex;
         }
         li{
@@ -80,6 +74,9 @@ header{
                 outline: none;
             }
         }
+        img{
+            padding: 0 30px;
+        }
     }
     @media (min-width: 500px){
         header{
@@ -98,7 +95,7 @@ header{
             width: 50%;
         }
         .hero__text{
-            padding: 10px 60px;
+            padding: 0 36px;
         }
         h3{
             padding: 10px 0;
@@ -133,14 +130,12 @@ header{
         .hero__inner{
             grid-column-gap: 10px;
             align-items: center;
-             display: grid;
+            display: grid;
             grid-template-columns: 1fr 1fr;
-
             img{
                width: 65%; 
             }
             .hero__text{
-                padding: 0 15px;
                 text-align: left;
                 order: -1;
                 h3{
@@ -151,16 +146,31 @@ header{
             }
         }
     }
+    @media (min-width: 1024px){
+        header .head__inner{
+            margin-bottom: 100px;
+        }
+        .hero__inner{
+            img{
+                width: 300px;
+            }
+            .hero__text h3{
+                font-size: 1.6em;
+            }
+        }
+    }
 }
 .products{
+    h2{
+        font-size: 2em;
+        color: $DDblue;
+        line-height: 120%;
+        text-align: center;
+
+    }
     grid-area: products;
     .products__inner{
-        h2{
-            color: $DDblue;
-            line-height: 120%;
-            padding: 15px 35px;
-            text-align: center;
-        }
+        margin: 30px 0;
         .products__image{
             margin: 35px 0;
             text-align: center;
@@ -227,6 +237,37 @@ header{
                 img{
                     width: 40%;
                 }
+            }
+        }
+    }
+    @media(min-width: 1024px){
+        .products{
+            h2{
+                margin: 0;
+                padding: 0; 
+            }
+        }
+        .products__inner{
+            padding: 0 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 100px 0;
+            .products__image{
+                margin: 0;
+            }
+            .products__image img{
+                width: 300px;
+            }
+            .products__text{
+                h4{
+                    font-size: 1.1em;
+                }
+                width: 160%;
+                grid-row-gap: 30px;
+                display: grid;
+                grid-column-gap: 30px;
+                grid-template-columns: 1fr 1fr
             }
         }
     }
