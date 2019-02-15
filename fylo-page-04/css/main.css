@@ -139,7 +139,7 @@ header {
       .products .products__inner .products__image img {
         width: 60%; }
     .products .products__inner .products__text {
-      padding: 10px 15px;
+      margin: 10px 15px;
       text-align: left; }
       .products .products__inner .products__text h4 {
         color: #070439;
@@ -186,9 +186,11 @@ header {
     .products .products__inner .products__image img {
       width: 40%; } }
   @media (min-width: 1024px) {
-    .products .products h2 {
-      margin: 0;
-      padding: 0; }
+    .products .products {
+      margin-bottom: 100px; }
+      .products .products h2 {
+        margin: 0;
+        padding: 0; }
     .products .products__inner {
       padding: 0 20px;
       display: flex;
@@ -197,7 +199,7 @@ header {
       margin: 100px 0; }
       .products .products__inner .products__image {
         margin: 0;
-        width: 80%; }
+        width: 55%; }
         .products .products__inner .products__image img {
           width: 300px; }
       .products .products__inner .products__text {
@@ -208,19 +210,21 @@ header {
         grid-template-columns: 1fr 1fr; }
         .products .products__inner .products__text h4 {
           font-size: 1.1em; }
-    .products .products__form .form--wrapper {
-      flex-direction: row;
-      justify-content: center;
-      align-items: center; }
-      .products .products__form .form--wrapper .form--input {
-        margin-right: 15px;
-        margin-bottom: 0;
-        padding: 17px 15px; }
-      .products .products__form .form--wrapper .form--btn {
-        width: 200px;
-        font-size: 1em; }
-    .products .products__form p {
-      padding: 20px 166px; } }
+    .products .products__form {
+      margin: 50px 0; }
+      .products .products__form .form--wrapper {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center; }
+        .products .products__form .form--wrapper .form--input {
+          margin-right: 15px;
+          margin-bottom: 0;
+          padding: 17px 15px; }
+        .products .products__form .form--wrapper .form--btn {
+          width: 200px;
+          font-size: 1em; }
+      .products .products__form p {
+        padding: 20px 166px; } }
 
 #footer {
   grid-area: footer; }
@@ -248,8 +252,10 @@ header {
             margin-right: 5px;
             font-size: 1.2em; }
       #footer footer .footer__inner .footer__form h3 {
+        font-family: "Open Sans", sans-serif;
         font-size: 1.2em;
-        text-align: end; }
+        text-align: end;
+        font-weight: 400; }
       #footer footer .footer__inner .footer__form .footer--form {
         margin: 40px 0;
         display: flex;
@@ -279,14 +285,16 @@ header {
           -ms-border-radius: 2px;
           -o-border-radius: 2px; }
       #footer footer .footer__inner .footer__nav {
-        font-size: 1em;
+        font-size: 1.2em;
         order: 3; }
         #footer footer .footer__inner .footer__nav .bold {
+          font-family: "Open Sans", sans-serif;
           margin-bottom: 10px;
           font-weight: bold; }
         #footer footer .footer__inner .footer__nav ul {
           margin-bottom: 35px; }
-        #footer footer .footer__inner .footer__nav li {
+        #footer footer .footer__inner .footer__nav li:not(.bold) {
+          font-size: 0.8em;
           margin-bottom: 12px; }
   @media (min-width: 1024px) {
     #footer footer .footer__inner {
@@ -300,12 +308,16 @@ header {
         display: flex; }
         #footer footer .footer__inner .footer__nav ul {
           margin: 0 10px; }
+        #footer footer .footer__inner .footer__nav li:not(.bold) {
+          font-size: 0.7em; }
       #footer footer .footer__inner .footer__fylo {
         font-size: 0.9em;
         margin: 0 12px; }
       #footer footer .footer__inner .footer__form {
         order: 3;
         width: 44%;
-        margin: 0 9px; }
+        margin: 0; }
+        #footer footer .footer__inner .footer__form h3 {
+          font-size: 1em; }
         #footer footer .footer__inner .footer__form .footer--form {
           margin: 19px 0; } }

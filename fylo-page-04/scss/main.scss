@@ -182,7 +182,7 @@ header{
             }
         }
         .products__text{
-            padding: 10px 15px;
+            margin: 10px 15px;
             text-align: left;
             h4{
                 color: $DDblue;
@@ -245,6 +245,7 @@ header{
     }
     @media(min-width: 1024px){
         .products{
+            margin-bottom: 100px;
             h2{
                 margin: 0;
                 padding: 0; 
@@ -258,7 +259,7 @@ header{
             margin: 100px 0;
             .products__image{
                 margin: 0;
-                width: 80%;
+                width: 55%;
 
                 img{
                     width: 300px; 
@@ -272,10 +273,11 @@ header{
                 grid-row-gap: 30px;
                 display: grid;
                 grid-column-gap: 30px;
-                grid-template-columns: 1fr 1fr
+                grid-template-columns: 1fr 1fr;
             }
         }
         .products__form{
+            margin: 50px 0;
             .form--wrapper{
                 flex-direction: row;
                 justify-content: center;
@@ -329,8 +331,10 @@ header{
             }
             .footer__form{
                 h3{
+                    font-family: "Open Sans", sans-serif;
                     font-size: 1.2em;
                     text-align: end;
+                    font-weight: 400;
                 }
                 .footer--form{
                     margin: 40px 0;
@@ -365,8 +369,9 @@ header{
                 }
             }
             .footer__nav{
-                font-size: 1em;
+                font-size: 1.2em;
                 .bold{
+                    font-family: "Open Sans", sans-serif;
                     margin-bottom: 10px;
                     font-weight: bold;
                 }
@@ -374,7 +379,8 @@ header{
                 ul{
                     margin-bottom: 35px;
                 }
-                li{
+                li:not(.bold){
+                    font-size: 0.8em;
                     margin-bottom: 12px;
                 }
             }
@@ -397,6 +403,9 @@ header{
              ul{
                  margin: 0 10px;
              }
+             li:not(.bold){
+                font-size: 0.7em; 
+             }
          }
          .footer__fylo{
              font-size: 0.9em;
@@ -405,8 +414,10 @@ header{
          .footer__form{
              order: 3;
              width: 44%;
-             margin: 0 9px;
-
+             margin: 0;
+                h3{
+                    font-size: 1em;
+                }
              .footer--form{
                  margin: 19px 0;
              }
