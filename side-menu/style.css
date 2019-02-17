@@ -194,3 +194,28 @@ li:hover{
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
 }
+.post .post__inner{
+    display: flex;
+    flex-direction: column;
+}
+.user{
+    margin-bottom: 10px;
+}
+.user .user__inner{
+    display: flex;
+}
+.user .user__inner p {
+    font-size: 0.9em;
+}
+.user .user__inner p span{
+    margin-right: 5px;
+    color: #8c9fc5;
+    font-size: 1em;
+}
+.user .user__inner p .time{
+    font-size: 0.8em;
+    color: #AAADB2;
+}
+.user .user__inner img{
+    height: 50px;
+}
