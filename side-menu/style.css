@@ -138,7 +138,8 @@ li:hover{
     grid-template-columns: 420px 1fr;
 }
 .content__container .sideads{
-    display: flex;
+    display: none;
+    /* display: flex; */
     align-items: center;
     height: 450px;
 }
@@ -218,4 +219,19 @@ li:hover{
 }
 .user .user__inner img{
     height: 50px;
+}
+
+@media(min-width: 375px){
+    .content__container{
+        grid-template-columns: auto;
+        justify-items: center;
+    }
+}
+@media(min-width: 1214px){
+    .content__container .sideads{
+        display: block;
+    }
+    .content__container{
+        grid-template-columns: 420px 1fr;
+    }
 }
