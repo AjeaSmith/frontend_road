@@ -69,8 +69,15 @@ body {
     font-size: 1.1em;
     text-transform: uppercase; }
 
-ul.show {
-  visibility: visible; }
-
-.show {
-  width: 280px; }
+main {
+  margin-top: 60px;
+  margin-left: 60px;
+  padding-left: 10px;
+  padding-right: 5px;
+  padding-top: 10px; }
+  main .container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-column-gap: 20px; }

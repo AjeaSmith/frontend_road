@@ -77,16 +77,17 @@ body{
         text-transform: uppercase;
     }
 }
-
-// styles to toggle
-ul.show{
-    // transition: opacity 3s 5s;
-    // -webkit-transition: opacity 3s 5s;
-    // -moz-transition: opacity 3s 5s;
-    // -ms-transition: opacity 3s 5s;
-    // -o-transition: opacity 3s 5s;
-    visibility: visible;
-}
-.show{
-    width: 280px;
+main{
+    margin-top: 60px;
+    margin-left: 60px;
+    padding-left: 10px;
+    padding-right: 5px;
+    padding-top: 10px;
+    .container{
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-column-gap: 20px;
+    }
 }
