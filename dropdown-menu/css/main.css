@@ -51,11 +51,7 @@ body {
   padding: 0 5px;
   height: calc(100vh - 60px);
   z-index: 99;
-  transition: width 0.3s ease-in;
-  -webkit-transition: width 0.3s ease-in;
-  -moz-transition: width 0.3s ease-in;
-  -ms-transition: width 0.3s ease-in;
-  -o-transition: width 0.3s ease-in; }
+  transition: all 0.3s ease-in-out; }
   .side-menu ul {
     overflow: hidden;
     padding-top: 15px;
@@ -67,18 +63,13 @@ body {
     text-transform: capitalize;
     line-height: 60px;
     display: block;
-    white-space: nowrap; }
+    white-space: nowrap;
+    transition: all 0.3s ease-in-out; }
   .side-menu span {
     font-size: 1.1em;
-    text-transform: uppercase;
-    opacity: 0.6; }
+    text-transform: uppercase; }
 
 ul.show {
-  transition: opacity 0s .5s;
-  -webkit-transition: opacity 0s .5s;
-  -moz-transition: opacity 0s .5s;
-  -ms-transition: opacity 0s .5s;
-  -o-transition: opacity 0s .5s;
   visibility: visible; }
 
 .show {

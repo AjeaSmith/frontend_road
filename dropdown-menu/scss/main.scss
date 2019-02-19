@@ -55,13 +55,14 @@ body{
     background: #1b1b1b;
     padding: 0 5px;
     height: calc(100vh - 60px);
-    z-index: 99;
+    z-index: 99; 
+    transition: all 0.3s ease-in-out;
     ul{
         overflow: hidden;
         padding-top: 15px;
         list-style: none;
         visibility: hidden;
-}
+    }
     li{
         font-size: 0.9em;
         list-style: none;
@@ -69,26 +70,21 @@ body{
         line-height: 60px;
         display: block;
         white-space: nowrap;
+        transition: all 0.3s ease-in-out;
     }
     span{
         font-size: 1.1em;
         text-transform: uppercase;
-        opacity: 0.6;
     }
-    transition: width 0.3s ease-in;
-    -webkit-transition: width 0.3s ease-in;
-    -moz-transition: width 0.3s ease-in;
-    -ms-transition: width 0.3s ease-in;
-    -o-transition: width 0.3s ease-in;
 }
 
 // styles to toggle
 ul.show{
-    transition: opacity 0s .5s;
-    -webkit-transition: opacity 0s .5s;
-    -moz-transition: opacity 0s .5s;
-    -ms-transition: opacity 0s .5s;
-    -o-transition: opacity 0s .5s;
+    // transition: opacity 3s 5s;
+    // -webkit-transition: opacity 3s 5s;
+    // -moz-transition: opacity 3s 5s;
+    // -ms-transition: opacity 3s 5s;
+    // -o-transition: opacity 3s 5s;
     visibility: visible;
 }
 .show{
