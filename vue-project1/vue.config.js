@@ -1,3 +1,3 @@
 module.exports = {
-    publicPath: 'vue-project1'
+    publicPath: process.env.NODE_ENV === 'production' ? '/FrontendRoad' : '/'
 }
